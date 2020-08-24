@@ -152,7 +152,7 @@ dependencies {
 }
 
 outputJar {
-    classifier = 'universal'
+    classifier = 'dev'
     
     manifest.attributes([
             "Implementation-Title": rootProject.name,

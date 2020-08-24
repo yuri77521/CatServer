@@ -64,7 +64,7 @@ public class Metrics {
 
     private final String pluginName = "CatServer";
     private final int pluginId = 5714;
-    private final String pluginVersion = "1.12.2-stable";
+    private final String pluginVersion = "1.12.2-dev";
 
     /**
      * Class constructor.
