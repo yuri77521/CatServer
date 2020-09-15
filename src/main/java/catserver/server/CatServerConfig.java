@@ -35,6 +35,8 @@ public class CatServerConfig {
     public boolean enableEssentialsNewVersionCompatible = true;
     public List<String> disableHopperMoveEventWorlds = Lists.<String>newArrayList();
 
+    public int blockUpdatePacketTickInterval = 0;
+
     public boolean disableUpdateGameProfile = false;
     public boolean disableFMLHandshake = false;
     public boolean disableFMLStatusModInfo = false;
@@ -70,6 +72,8 @@ public class CatServerConfig {
         enableCoreProtectModBlockCompatible = getOrWriteBooleanConfig("plugin.patcher.enableCoreProtectModBlockCompatible", enableCoreProtectModBlockCompatible);
         enableEssentialsNewVersionCompatible = getOrWriteBooleanConfig("plugin.patcher.enableEssentialsNewVersionCompatible", enableEssentialsNewVersionCompatible);
         disableHopperMoveEventWorlds = getOrWriteStringListConfig("plugin.disableHopperMoveEventWorlds", disableHopperMoveEventWorlds);
+        // network
+        blockUpdatePacketTickInterval = getOrWriteIntConfig("network.blockUpdatePacketTickInterval", blockUpdatePacketTickInterval);
         // general
         disableUpdateGameProfile = getOrWriteBooleanConfig("disableUpdateGameProfile", disableUpdateGameProfile);
         disableFMLHandshake = getOrWriteBooleanConfig("disableFMLHandshake", disableFMLHandshake);
